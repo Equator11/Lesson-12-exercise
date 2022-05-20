@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Flexbox-exercise</title>
+
+    <style>
+      p{
+        font-family: Arial;
+        color: gray;
+        line-height: 5px;
+      }
+      .home {
+        background-color: blue;
+        color: white;
+        padding-top: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 3px;
+        border-radius: 10px;
+        margin: 5px;
+        
+      }
+
+      .cat-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-top: 20px;
+      }
+
+      .follow{
+        font-family: Arial;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: blueviolet; 
+        color: white; 
+        border: none; 
+        border-radius: 5px; 
+        margin-top: 25px;   
+      }
+
+      .twelve-g-flex {
+        width: 400px;
+        background-color: white;
+        padding: 10px;
+        margin-bottom: 50px;
+      }
+
+      .search-bar {
+        border-radius: 12px;
+        border: none;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 500px;
+      }
+
+      .download {
+        background-color: rgb(161, 7, 161);
+        border-color: rgb(247, 214, 214);
+        border-style: solid;
+        color: white;
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </header>
+  <body style="padding-bottom: 200px; background-color: black;">
+  <p style="color: white;"><strong>12a</strong></p>
+  <div style="
+  display: flex;
+  flex-direction: row;
+  ">
+  <div style="background-color: lightblue; width: 200px; font-size: 22px;">200px</div>
+  <div style="background-color: lightpink; width: 75px; font-size: 22px;">75px</div>
+  </div>
+
+  <p style="color: white;"><strong>12b</strong></p>
+  <div style="
+  display: flex;
+  flex-direction: row;
+  ">
+  <div style="background-color: lightblue; width: 50px; font-size: 22px;">item1</div>
+  <div style="background-color: lightpink; flex: 1; font-size: 22px;">item2</div>
+  <div style="background-color: lightblue; width: 75px; font-size: 22px;">item3</div>
+  </div>
+
+  <p style="color: white;"><strong>12c</strong></p>
+  <div style="
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  ">
+  <div style="background-color: lightpink; font-size: 22px;">item1</div>
+  <div style="background-color: lightpink; font-size: 22px;">item2</div>
+  <div style="background-color: lightpink; font-size: 22px;">item3</div>
+  <div style="background-color: lightpink; font-size: 22px;">item4</div>
+  </div>
+
+  <p style="color: white;"><strong>12d</strong></p>
+
+  <div style="
+  background-color: white;
+  padding: 7px;
+  margin-bottom: 50px;
+  ">
+    <div style="
+  display: flex;
+  flex-direction: row;
+  border-width: 1px;
+  border-style: solid;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  ">
+  <div style="background-color: lightpink; font-size: 22px;">item1</div>
+  <div style="background-color: lightpink; font-size: 22px;">item2</div>
+  </div>
+  </div>
+
+  <p style="color: white;"><strong>12e</strong></p>
+
+<div style="padding: 5px;
+background-color: white;
+width: 320px;
+margin-bottom: 50px;
+">
+<div style="
+background-color: white;
+border-width: 1px;
+border-style: solid;;
+border-radius: 5px;
+padding: 7px;
+width: 300px;
+
+">
+  <div style="background-color: white;
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: space-between;
+">
+  <div style="font-size: 18px;
+  font-family: Arial;">Home</div>
+  <div class="home">14</div>
+</div>
+
+  
+<div style="background-color: white;
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: space-between;
+">
+  <div style="font-size: 18px;
+  font-family: Arial;">Notifications</div>
+  <div class="home">3</div>
+</div>
+
+
+<div style="background-color: white;
+display: flex;
+flex-direction: row;
+text-align: center;
+justify-content: space-between;
+">
+  <div style="font-size: 18px;
+  font-family: Arial;">Messages</div>
+  <div class="home">5</div>
+</div>
+</div>
+</div>
+
+<p style="color: white;"><strong>12f</strong></p>
+
+<div class="twelve-g-flex">
+  <div>
+    
+<div style="
+display: flex;
+flex-direction: row; align-content: center;
+justify-content: space-between;
+
+">
+  <div style="
+  display: grid;
+  grid-template-columns: 50px 1fr;
+   column-gap: 10px;
+  ">
+   <div>
+     <img class="cat-image" src="/intro-to-html/white cat.jpg" alt="">
+   </div>
+   
+   <div style="vertical-align: top;">
+     <p style="color: black;"><strong>Oliver</strong></p>
+   <p>White cat</p>
+   <p>Popularr</p>
+   </div>
+  </div>
+   <div style="height: 79px; justify-content: center;">
+     <button class="follow">Follow</button>
+   </div>
+</div>
+  </div>
+  <div>
+    
+<div style="
+display: flex;
+flex-direction: row; align-content: center;
+justify-content: space-between;
+
+">
+  <div style="
+  display: grid;
+  grid-template-columns: 50px 1fr;
+   column-gap: 10px;
+  ">
+   <div>
+     <img class="cat-image" src="/intro-to-html/cat facemask.jpg" alt="">
+   </div>
+   
+   <div style="vertical-align: top;">
+     <p style="color: black;"><strong>Mimi</strong></p>
+   <p>Facemask cat</p>
+   <p>Popularr</p>
+   </div>
+  </div>
+   <div style="height: 79px; justify-content: center;">
+     <button class="follow">Follow</button>
+   </div>
+</div>
+  </div>
+  <div>
+    
+<div style="
+display: flex;
+flex-direction: row; align-content: center;
+justify-content: space-between;
+
+">
+  <div style="
+  display: grid;
+  grid-template-columns: 50px 1fr;
+   column-gap: 10px;
+  ">
+   <div>
+     <img class="cat-image" src="/intro-to-html/black cat.jpg" alt="">
+   </div>
+   
+   <div style="vertical-align: top;">
+     <p style="color: black;"><strong>Rex</strong></p>
+   <p>Black cat</p>
+   <p>Popularr</p>
+   </div>
+  </div>
+   <div style="height: 79px; justify-content: center;">
+     <button class="follow">Follow</button>
+   </div>
+ 
+</div>
+  </div>
+</div>
+
+<p style="color: white;"><strong>12g</strong></p>
+
+<div style="
+width: 800px;
+background-color: white;
+height: 60px;
+">
+  <div style="
+  width: 790px;
+  margin: 5px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(161, 7, 161);
+  align-items: center;
+  ">
+    <div style="
+    font-family: Arial;
+      font-weight: bold;
+      color: white;
+      margin-left: 5px;
+      ">Home</div>
+    <div style="
+    flex: 2;
+    margin-left: 50px;
+    ">
+      <input class="search-bar" type="text" placeholder="Search">
+    </div>
+    <div style="
+    margin-right: 5px;
+    ">
+      <button class="download">Download</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
